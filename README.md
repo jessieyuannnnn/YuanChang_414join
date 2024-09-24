@@ -30,3 +30,26 @@
 第4轮排序
 (1)3,4,5,6,7
 排序结束
+
+
+排序代码：
+void Swap(int *a,int *b){
+int tmp=*a;
+*a=*b;
+*b=tmp;
+}
+//冒泡排序
+void BubbleSort(int *arr,int n){
+for(int i=0;i<n;++i){
+int flag=0;
+for(int j=0;j<n-1-i;++j){
+if(arr[j+1]<arr[j]){
+flag=1;
+Swap(&arr[j],&arr[j+1]);
+}
+}
+if(flag==0){
+break;
+}
+}
+}
