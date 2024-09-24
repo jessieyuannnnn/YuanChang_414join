@@ -32,7 +32,7 @@
 排序结束
 
 
-排序代码：
+三、排序代码：
 void Swap(int *a,int *b){
 int tmp=*a;
 *a=*b;
